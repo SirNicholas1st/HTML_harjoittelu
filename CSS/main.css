@@ -365,28 +365,32 @@ h2 {
         overflow: visible;
     }
 
-    
-
     #skills {
         grid-template-columns: 1fr;
     }
     #cinfo {
         grid-template-columns: 1fr;
     }
-    #main-footer {
-        position: relative;
-    }
+
 
     #jobs {
+        
         grid-template-columns: 1fr;
     }
 
     #education {
         flex-direction: column; 
+        gap: 10px;
+        padding: 1vh;
     }
 
     .education1 {
-        width: 250px;
+        font-size: smaller;
+        width: 387.97px;
+    }
+
+    #main-footer {
+        position: relative;
     }
 
 }
