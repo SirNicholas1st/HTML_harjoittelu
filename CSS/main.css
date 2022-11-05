@@ -45,8 +45,6 @@ body {
     margin-top: 1vh;
 }
 
-
-
 .dropbtn {
     background-color: rgba(73, 73, 73);
     color: var(--2vari);
@@ -359,11 +357,9 @@ h2 {
     width: 100%;
     bottom: 0;
     background:rgba(73, 73, 73, 0.3);
-    
 }
 
 @media screen and (max-width: 500px) {
-
 
     .education1 {
         font-size: smaller;
@@ -409,10 +405,7 @@ h2 {
     #cinfo {
         grid-template-columns: 1fr;
     }
-
     #jobs {
         grid-template-columns: 1fr;
     }
     }
-
-
