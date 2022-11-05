@@ -40,6 +40,13 @@ body {
             position: fixed;
          }
 
+
+.main {
+    margin-top: 1vh;
+}
+
+
+
 .dropbtn {
     background-color: rgba(73, 73, 73);
     color: var(--2vari);
@@ -79,7 +86,6 @@ body {
 .dropdown-content a.current {
     background-color: var(--2vari);
     color: black;
-    
 }
 
 .dropdown-content a:hover {
@@ -97,14 +103,11 @@ body {
 }
 
 .dropdown:hover .dropbtn {background-color: var(--2vari);
-    
-
 }
 
 h1, h2 {
     font-weight: 400;
     margin: 0;
-
 }
 
 h1 {
@@ -116,17 +119,14 @@ h2 {
     font-size: 2rem;
     margin-left: 1rem;
     margin-top: 0.1rem;
-
 }
 
 #otsikot {
-
     width: 100%;
     position: absolute;
     height: 180px;
     top: 50%;
     background: rgba(73, 73, 73, 0.3);
-   
 }
 
 #otsikot2 {
@@ -136,14 +136,12 @@ h2 {
     z-index: 1;
     top: 50%;
     left: 25%;
-    margin: -100px 0 0 -150px;
-    
+    margin: -100px 0 0 -150px;  
 }
 
 .icons {
     padding: 13px;
-    background: rgba(73, 73, 73, 0.3);
-    
+    background: rgba(73, 73, 73, 0.3); 
 }
 
 .icons a {
@@ -175,7 +173,7 @@ h2 {
     border: solid rgba(73, 73, 73, 0.5);
     border-radius: 1vh;
     position: relative;
-    min-width: 250px;
+    min-width: 350px;
 }
 
 .job:hover::before {
@@ -223,12 +221,14 @@ h2 {
 
 #education {
     display: flex;
+    position: relative;
     height: 100px;
     flex-direction: row;
 }
 
 .education1 {
     width: calc(100vh - 24px);
+    min-width: 350px;
     margin: auto;
     margin-left: 24px;
     margin-right: 24px;
@@ -353,6 +353,8 @@ h2 {
 
 #main-footer {
     text-align: center;
+    margin-top: 5vh;
+    box-sizing: border-box;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -361,8 +363,44 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
+
+
+    .education1 {
+        font-size: smaller;
+    }
+
+    #main-footer {
+        visibility: hidden;
+    }
+
+    #otsikot2 h1 {
+        margin-left: 5vh;  
+    }
+
+    #otsikot2 h2{
+        margin-left: 6vh;
+    }
+   
+}
+
+@media screen and (max-width: 1000px) {
     body{
-        overflow: visible;
+        overflow-y:  visible;
+    }
+
+    #main-footer {
+        visibility: hidden;
+    }
+
+    #education{
+        flex-direction: column; 
+        gap: 10px;
+        padding: 1vh;
+        }
+
+    .education1 {
+        
+        width: auto;
     }
 
     #skills {
@@ -372,38 +410,9 @@ h2 {
         grid-template-columns: 1fr;
     }
 
-
     #jobs {
-        
         grid-template-columns: 1fr;
     }
-
-    #education {
-        flex-direction: column; 
-        gap: 10px;
-        padding: 1vh;
     }
-
-    .education1 {
-        font-size: smaller;
-        width: 387.97px;
-    }
-
-    #main-footer {
-        position: relative;
-    }
-
-}
-
-
-
-
-
-
-
-
-        
-
-
 
 
