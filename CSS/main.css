@@ -14,7 +14,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.3;
     overflow: hidden;
-    
 }
 
 
@@ -220,14 +219,16 @@ h2 {
 #education {
     display: flex;
     position: relative;
+    margin: auto;
     height: 100px;
     flex-direction: row;
 }
 
 .education1 {
     width: calc(100vh - 24px);
+    position: relative;
     min-width: 350px;
-    margin: auto;
+    margin-bottom: auto;
     margin-left: 24px;
     margin-right: 24px;
     gap: 0.5vh;
@@ -365,9 +366,6 @@ h2 {
         font-size: smaller;
     }
 
-    #main-footer {
-        visibility: hidden;
-    }
 
     #otsikot2 h1 {
         margin-left: 5vh;  
@@ -384,9 +382,6 @@ h2 {
         overflow-y:  visible;
     }
 
-    #main-footer {
-        visibility: hidden;
-    }
 
     #education{
         flex-direction: column; 
@@ -408,4 +403,17 @@ h2 {
     #jobs {
         grid-template-columns: 1fr;
     }
+    }
+
+
+    @media screen and (max-width: 1500px) {
+
+        #main-footer {
+            visibility: hidden;
+        }
+
+        body{
+            overflow-y: visible;
+        }
+        
     }
